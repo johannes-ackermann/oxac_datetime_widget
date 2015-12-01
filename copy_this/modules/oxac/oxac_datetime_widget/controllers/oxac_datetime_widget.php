@@ -7,8 +7,8 @@
  * 
  * This is an extension of oxWidget, which is an extension of oxView in turn.
  * 
- * 13/1/18-22
- * v0.2
+ * 13/1/18-15/12/1
+ * v0.3.1
  *
  */
 
@@ -38,6 +38,6 @@ class oxac_datetime_widget extends oxWidget
      */
     public function isCacheable()
     {
-        return false;
+        return oxRegistry::getConfig()->getConfigParam('blDateWidgetCaching');
     }
 }

@@ -1,5 +1,6 @@
 <?php
-$sMetadataVersion = '1.2';
+
+$sMetadataVersion = '1.1';
 
 /**
  * Module information
@@ -15,7 +16,7 @@ $aModule = array(
 				'de'		=>	'Dynamisches Widget, das die Uhrzeit und das Datum oben auf der Seite anzeigt.',
 		),
 		'thumbnail'		=> '',
-		'version'		=> '0.3',
+		'version'		=> '0.3.1',
 		'author'		=> 'Johannes Ackermann',
 		'url'			=> 'http://www.oxid-esales.com',
 		'email' 		=> 'johannes.ackermann@oxid-esales.com',

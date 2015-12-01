@@ -1,0 +1,6 @@
+# IDE
+.idea/
+.phpstorm-oxid.meta.php
+.buildpath
+.project
+.settings/
