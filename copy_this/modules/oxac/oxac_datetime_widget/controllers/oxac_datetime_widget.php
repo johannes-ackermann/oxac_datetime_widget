@@ -20,19 +20,6 @@ class oxac_datetime_widget extends oxWidget
 
 
     /**
-     * Render to return template.
-     *
-     * @return string
-     */
-    public function render()
-    {
-        parent::render();
-        return $this->_sThisTemplate;
-    }
-
-
-
-    /**
      * getDateAndTime
      *
      * Returns date and time in a string.
