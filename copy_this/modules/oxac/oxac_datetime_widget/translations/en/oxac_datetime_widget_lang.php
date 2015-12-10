@@ -4,11 +4,11 @@
  * Widget for demonstrating the caching feature.
  *
  * 13/1/18-15/12/10
- * v0.3.2
+ * v0.4
  */
 
-$sLangName  = "Deutsch";
-$aLang = array(
+$sLangName  =   'English';
+$aLang      =   array(
     'charset'                               =>  'UTF-8',
-    'OXAC_DATETIME_WIDGET_NOWIS'            =>  'Heute ist der',
+    'OXAC_DATETIME_WIDGET_NOWIS'            =>  'Today is',
 );

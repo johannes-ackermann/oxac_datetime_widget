@@ -4,7 +4,7 @@
  * Widget for demonstrating the caching feature.
  *
  * 13/1/18-15/12/10
- * v0.3.2
+ * v0.4
  */
 
 $sMetadataVersion = '1.1';
@@ -23,7 +23,7 @@ $aModule = array(
         'de'        =>  'Dynamisches Widget, das die Uhrzeit und das Datum oben auf der Seite anzeigt.',
     ),
     'thumbnail'     =>  '',
-    'version'       =>  '0.3.2',
+    'version'       =>  '0.4',
     'author'        =>  'Johannes Ackermann',
     'url'           =>  'http://www.oxid-esales.com',
     'email'         =>  'johannes.ackermann@oxid-esales.com',
@@ -39,7 +39,7 @@ $aModule = array(
         array(
             'template'  =>  'widget/header/servicebox.tpl',
             'block'     =>  'widget_header_servicebox_flyoutbox',
-            'file'      =>  'views/blocks/datetime_header_block.tpl',
+            'file'      =>  'views/blocks/oxac_datetime_header_block.tpl',
         ),
     ),
     'settings'      => array(

@@ -1,0 +1,8 @@
+.oxac_datetime{
+    position: absolute;
+    border: 0.2em dashed #f00;
+    min-width: 200px;
+    left: -300px;
+    font-size: 1.3em;
+    padding: 0.2em;
+}
