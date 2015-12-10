@@ -7,8 +7,9 @@
  * v0.3.2
  */
 
-$sLangName  = "Deutsch";
-$aLang = array(
+$sLangName	= "Deutsch";
+$aLang		= array(
     'charset'                               =>  'UTF-8',
-    'OXAC_DATETIME_WIDGET_NOWIS'            =>  'Heute ist der',
+    'SHOP_MODULE_GROUP_main'                =>  'Dieses Widget cachen',
+    'SHOP_MODULE_blDateWidgetCaching'       =>  'Caching aktiv',
 );

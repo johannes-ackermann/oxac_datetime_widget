@@ -1,38 +1,55 @@
 <?php
-
 /**
- * 
  * @author johannes ackermann
  * Widget business logic. Sends current date and time to template.
- * 
- * This is an extension of oxWidget, which is an extension of oxView in turn.
- * 
- * 13/1/18-15/12/1
- * v0.3.1
  *
+ * This is an extension of oxWidget, which is an extension of oxView in turn.
+ * Note the isCacheable() function!
+ *
+ * 13/1/18-15/12/10
+ * v0.3.2
  */
-
 
 class oxac_datetime_widget extends oxWidget
 {
+
+
+
     protected $_sThisTemplate = 'oxac_datetime_widget.tpl';
-    
+
+
+
     /**
-     * Render. Puts 
+     * Render to return template.
      *
      * @return string
      */
     public function render()
     {
-		parent::render();
-    	$this->_aViewData['sDateAndTime'] = date("j. n. Y, H:i:s");
-    	return $this->_sThisTemplate;
+        parent::render();
+        return $this->_sThisTemplate;
     }
+
+
+
+    /**
+     * getDateAndTime
+     *
+     * Returns date and time in a string.
+     * @return string
+     */
+    public function getDateAndTime()
+    {
+        return date("j. n. Y, H:i:s");
+    }
+
+
 
     /**
      * isCacheable.
      * For EE: The module shall not be cached. Like this, it will be able to display the correct time on every call.
-     * Training: Change return value to "true" and see what happens.
+     * Training: Activate the caching feature in the shop as well as in the module settings and see what happens.
+     * (Requires Varnish)
      *
      * @return boolean
      */
