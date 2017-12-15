@@ -10,14 +10,11 @@
  * v0.3.2
  */
 
-class oxac_datetime_widget extends oxWidget
-{
+namespace OxidEsales\OxidAcademy\DateTimeWidgetModule\Controller;
 
-
+class DateTimeWidget extends oxWidget {
 
     protected $_sThisTemplate = 'oxac_datetime_widget.tpl';
-
-
 
     /**
      * getDateAndTime
@@ -29,8 +26,6 @@ class oxac_datetime_widget extends oxWidget
     {
         return date("j. n. Y, H:i:s");
     }
-
-
 
     /**
      * isCacheable.

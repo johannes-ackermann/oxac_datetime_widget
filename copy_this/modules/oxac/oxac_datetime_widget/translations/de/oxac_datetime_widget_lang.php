@@ -7,8 +7,13 @@
  * v0.4
  */
 
-$sLangName  =   'Deutsch';
-$aLang      =   array(
+$sLangName = 'Deutsch';
+
+// -------------------------------
+// RESOURCE IDENTIFIER = STRING
+// -------------------------------
+$aLang = [
     'charset'                               =>  'UTF-8',
+
     'OXAC_DATETIME_WIDGET_NOWIS'            =>  'Heute ist der',
-);
+];

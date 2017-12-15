@@ -7,47 +7,51 @@
  * v0.4
  */
 
-$sMetadataVersion = '1.1';
+/**
+ * Metadata version
+ */
+$sMetadataVersion = '2.0';
 
 /**
  * Module information
  */
-$aModule = array(
-    'id'            => 'oxac_datetime_widget',
-    'title'         =>  array(
+$aModule = [
+    'id'            =>  'oxac_datetime_widget',
+    'title'         =>  [
         'en'        =>  '&quot;Date and time&quot; widget',
         'de'        =>  '&bdquo;Datum und Uhrzeit&rdquo;-Widget',
-    ),
-    'description'    => array(
+    ],
+    'description'   =>  [
         'en'        =>  'A tiny and dynamic widget showing date and time on top of the page.',
         'de'        =>  'Dynamisches Widget, das die Uhrzeit und das Datum oben auf der Seite anzeigt.',
-    ),
+    ],
     'thumbnail'     =>  '',
     'version'       =>  '0.4',
     'author'        =>  'Johannes Ackermann',
     'url'           =>  'http://www.oxid-esales.com',
     'email'         =>  'johannes.ackermann@oxid-esales.com',
-    'extend'        =>  array(
-    ),
-    'files'         =>  array(
-        'oxac_datetime_widget'      =>  'oxac/oxac_datetime_widget/controllers/oxac_datetime_widget.php',
-    ),
-    'templates'     =>  array(
+    'controllers'   =>  [
+        // Controller
+        'oxac_datetime_widget'      =>  \OxidEsales\OxidAcademy\DateTimeWidgetModule\Controller\DateTimeWidget::class,
+    ],
+    'templates'     =>  [
+        // Widget
         'oxac_datetime_widget.tpl'  =>  'oxac/oxac_datetime_widget/views/widget/oxac_datetime_widget.tpl'
-    ),
-    'blocks'        => array(
-        array(
+    ],
+    'blocks'        =>  [
+        // Widget
+        [
             'template'  =>  'widget/header/servicebox.tpl',
             'block'     =>  'widget_header_servicebox_flyoutbox',
             'file'      =>  'views/blocks/oxac_datetime_header_block.tpl',
-        ),
-    ),
-    'settings'      => array(
-        array(
+        ],
+    ],
+    'settings'      =>  [
+        [
             'group' =>  'main',
             'name'  =>  'blDateWidgetCaching',
             'type'  =>  'bool',
             'value' =>  'false'
-        ),
-    ),
-);
+        ],
+    ],
+];

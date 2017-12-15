@@ -7,9 +7,14 @@
  * v0.4
  */
 
-$sLangName  =   'English';
-$aLang      =   array(
+$sLangName = 'English';
+
+// -------------------------------
+// RESOURCE IDENTIFIER = STRING
+// -------------------------------
+$aLang = [
     'charset'                               =>  'UTF-8',
+
     'SHOP_MODULE_GROUP_main'                =>  'Caching for this widget',
     'SHOP_MODULE_blDateWidgetCaching'       =>  'Enable caching',
-);
+];

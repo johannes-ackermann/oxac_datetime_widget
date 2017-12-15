@@ -7,8 +7,13 @@
  * v0.4
  */
 
-$sLangName  =   'English';
-$aLang      =   array(
+$sLangName = 'English';
+
+// -------------------------------
+// RESOURCE IDENTIFIER = STRING
+// -------------------------------
+$aLang = [
     'charset'                               =>  'UTF-8',
+
     'OXAC_DATETIME_WIDGET_NOWIS'            =>  'Today is',
-);
+];
