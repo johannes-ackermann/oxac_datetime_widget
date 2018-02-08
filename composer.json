@@ -13,13 +13,13 @@
       "target-directory": "oxac/oxac_datetime_widget"
     }
   },
-  "version":  "1.0.0",
+  "version":  "1.1.0",
   "require": {
     "php":  ">=5.6"
   },
   "autoload": {
     "psr-4": {
-      "OxidEsales\\OxidAcademy\\DateTimeWidgetModule\\": "../../../source/modules/oxac/oxac_datetime_widget"
+      "OxidAcademy\\DateTimeWidgetModule\\": "../../../source/modules/oxac/oxac_datetime_widget"
     }
   }
 }

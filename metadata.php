@@ -26,13 +26,13 @@ $aModule = [
         'de'        =>  'Dynamisches Widget, das die Uhrzeit und das Datum oben auf der Seite anzeigt.',
     ],
     'thumbnail'     =>  '',
-    'version'       =>  '0.4',
+    'version'       =>  '1.1.0',
     'author'        =>  'Johannes Ackermann',
     'url'           =>  'http://www.oxid-esales.com',
     'email'         =>  'johannes.ackermann@oxid-esales.com',
     'controllers'   =>  [
         // Controller
-        'oxac_datetime_widget'      =>  \OxidEsales\OxidAcademy\DateTimeWidgetModule\Controller\DateTimeWidget::class,
+        'oxac_datetime_widget'      =>  \OxidAcademy\DateTimeWidgetModule\Controller\DateTimeWidget::class,
     ],
     'templates'     =>  [
         // Widget
@@ -41,8 +41,8 @@ $aModule = [
     'blocks'        =>  [
         // Widget
         [
-            'template'  =>  'widget/header/servicebox.tpl',
-            'block'     =>  'widget_header_servicebox_flyoutbox',
+            'template'  =>  'widget/layout/header.tpl',
+            'block'     =>  'layout_header_logo',
             'file'      =>  'views/blocks/oxac_datetime_header_block.tpl',
         ],
     ],

@@ -10,9 +10,9 @@
  * v0.3.2
  */
 
-namespace OxidEsales\OxidAcademy\DateTimeWidgetModule\Controller;
+namespace OxidAcademy\DateTimeWidgetModule\Controller;
 
-class DateTimeWidget extends oxWidget {
+class DateTimeWidget extends \OxidEsales\Eshop\Application\Component\Widget\WidgetController {
 
     protected $_sThisTemplate = 'oxac_datetime_widget.tpl';
 
