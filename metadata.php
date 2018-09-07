@@ -41,7 +41,7 @@ $aModule = [
     'blocks'        =>  [
         // Widget
         [
-            'template'  =>  'widget/layout/header.tpl',
+            'template'  =>  'layout/header.tpl',
             'block'     =>  'layout_header_logo',
             'file'      =>  'views/blocks/oxac_datetime_header_block.tpl',
         ],
