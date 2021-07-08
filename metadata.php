@@ -10,13 +10,13 @@
 /**
  * Metadata version
  */
-$sMetadataVersion = '2.0';
+$sMetadataVersion = '2.1';
 
 /**
  * Module information
  */
 $aModule = [
-    'id'            =>  'oxac_datetime_widget',
+    'id'            =>  'oxacdatetimewidget',
     'title'         =>  [
         'en'        =>  '&quot;Date and time&quot; widget',
         'de'        =>  '&bdquo;Datum und Uhrzeit&rdquo;-Widget',
@@ -26,7 +26,7 @@ $aModule = [
         'de'        =>  'Dynamisches Widget, das die Uhrzeit und das Datum oben auf der Seite anzeigt.',
     ],
     'thumbnail'     =>  '',
-    'version'       =>  '1.1.0',
+    'version'       =>  '2.0.0',
     'author'        =>  'Johannes Ackermann',
     'url'           =>  'http://www.oxid-esales.com',
     'email'         =>  'johannes.ackermann@oxid-esales.com',
@@ -36,7 +36,7 @@ $aModule = [
     ],
     'templates'     =>  [
         // Widget
-        'oxac_datetime_widget.tpl'  =>  'oxac/oxac_datetime_widget/views/widget/oxac_datetime_widget.tpl'
+        'oxac_datetime_widget.tpl'  =>  'oxac/datetimewidget/views/widget/oxac_datetime_widget.tpl'
     ],
     'blocks'        =>  [
         // Widget
