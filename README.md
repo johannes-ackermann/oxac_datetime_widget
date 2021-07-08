@@ -3,44 +3,60 @@ OXID Academy Sample Modules: Widget
 
 # Description
 
-Sample Module for training purposes.
-Provides a widget that is integrated to the header of the shop page.
+This is a sample Module for training purposes. It will display the current date and time on the top of the shop's page.
 
-# Install
+# Installation instructions
 
-* Create a local directory for repositories in your project, e.g. `oxideshop/extensions`.
-* Check-out this module and move it to the directory you just created
-* Add the repository to your project's compser.json, e.g. like this:
+## Register and require the package
 
-  ```json
-    "repositories": {
-        "oxid-academy/datetimewidget": {
-            "type": "path",
-            "url": "extensions/oxac_datetime_widget/"
-        }
-    }
-  ```    
-
-* Be aware that you need to extend the "repositories" section if it already exists. Take care about the JSON syntax.
-* "Require" the module:
-
-```json
-    "require": {
-        "php": ">=5.6",
-        ...
-        "oxid-academy/datetimewidget": "*"
-    },
+In the local development environment, cd into the root directory of your compilation
+and run Composer as follows:
+ 
+```
+composer config repositories.oxid-academy/datetimewidget vcs https://github.com/bertrandjackermann/oxac_datetime_widget.git
 ```
 
-* Run `composer update`
-* When Composer is done, go to the shop admin, open "Extensions", "Modules", select "External addresses for article details pages" and click "activate".
+This should result in the following change to `composer.json`:
+```
+  ...
+  "repositories": {
+    ...,
+    "oxid-academy/datetimewidget": {
+      "type": "vcs",
+      "url": "https://github.com/bertrandjackermann/oxac_datetime_widget.git"
+    }
+  },
+  ...
+```
+
+And then, ...
+```
+composer require oxid-academy/datetimewidget
+```
+
+... which results in something like:
+```
+  ...
+  "require": {
+    ...,
+    "oxid-academy/datetimewidget": "v2.0.0"
+  },
+  ...
+```
+
+# Enabling the module
+
+* When Composer is done processing your new request, you may enable the module:
+```
+vendor/bin/oe-console o:m:activate oxacdatetimewidget
+```
 
 # Use
 
- * In the shop admin, open "Extensions", "Modules", select "'Date and time' widget" and click "activate".
+ * This module is intendet to teach you the basics of widget creation and the high availability option with the reverse proxy (Varnish).
+ * In the shop admin, open "Extensions", "Modules", and select "'Date and time' widget"
  * On the settings tab, you may enable caching for this module (available for OXID eShop Enterprise Edition only).
 
 # Compatibility:
 
-* Requires OXID eShop CE/PE/EE 6.0.x
-* PHP 5.6 or higher
+* Requires OXID eShop CE/PE/EE 6.2.x or higher.
